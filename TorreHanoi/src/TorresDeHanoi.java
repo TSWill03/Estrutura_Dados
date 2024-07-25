@@ -4,7 +4,7 @@ import java.util.concurrent.RecursiveTask;
 public class TorresDeHanoi {
 
     static class HanoiTask extends RecursiveTask<Void> {
-        private static final int SEQUENTIAL_THRESHOLD = 10; // Ajuste do threshold
+        private static final int SEQUENTIAL_THRESHOLD = 10;
 
         int n;
         char origem, destino, auxiliar;
@@ -44,7 +44,8 @@ public class TorresDeHanoi {
     }
 
     public void rodarHanoi() {
-        int n = 41; // Número de discos
+        int n = 41; 
+// Número de discos
 
         long startTime = System.currentTimeMillis();
 
